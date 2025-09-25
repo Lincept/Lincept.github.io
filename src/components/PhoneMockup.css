@@ -1,0 +1,394 @@
+/* PhoneMockup.css - 简洁手机边框，重点突出内容 */
+
+.phone-mockup {
+    position: relative;
+    margin: 2rem auto;
+    transition: all 0.3s ease;
+}
+
+.phone-mockup:hover {
+    transform: translateY(-8px);
+}
+
+/* 简洁的手机边框 */
+.phone-frame {
+    width: 320px;
+    height: 640px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 32px;
+    padding: 6px;
+    position: relative;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.12),
+        0 0 0 1px rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.phone-frame:hover {
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow:
+        0 12px 48px rgba(0, 0, 0, 0.18),
+        0 0 0 1px rgba(255, 255, 255, 0.15);
+}
+
+/* 屏幕区域 - 重点突出内容 */
+.phone-screen {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    border-radius: 26px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 应用内容区域 */
+.app-content {
+    flex: 1;
+    padding: 32px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+}
+
+/* 内容标题区域 */
+.content-header {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.content-header h2 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.content-header p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* 屏幕内容样式 */
+.screen-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 推荐卡片样式 */
+.recommendation-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    flex: 1;
+}
+
+.rec-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.rec-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+.rec-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.rec-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.rec-score {
+    font-size: 16px;
+    font-weight: 700;
+    color: #4ade80;
+}
+
+.rec-card.best .rec-label {
+    color: #4ade80;
+}
+
+.rec-card.good .rec-label {
+    color: #60a5fa;
+}
+
+.rec-card.fair .rec-label {
+    color: #fbbf24;
+}
+
+.rec-card h3 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+}
+
+.rec-card p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* 数据分析样式 */
+.analytics-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.chart-container {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.chart-bars {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 120px;
+    gap: 12px;
+}
+
+.chart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    gap: 8px;
+}
+
+.bar {
+    width: 100%;
+    background: linear-gradient(180deg, #4ade80 0%, #22c55e 100%);
+    border-radius: 4px 4px 0 0;
+    min-height: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(74, 222, 128, 0.3);
+}
+
+.chart-item span {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.insights {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.insight-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+}
+
+.insight-icon {
+    font-size: 16px;
+}
+
+/* 历史记录样式 */
+.history-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.stat-number {
+    color: #4ade80;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.stat-label {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.recent-choices {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.recent-choices h4 {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+}
+
+.choice-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.choice-item:last-child {
+    border-bottom: none;
+}
+
+.choice-icon {
+    font-size: 18px;
+    width: 24px;
+    text-align: center;
+}
+
+.choice-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.choice-name {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.choice-time {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+}
+
+.choice-result.success {
+    color: #4ade80;
+    font-size: 16px;
+}
+
+/* 屏幕指示器 */
+.screen-indicators {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator.active {
+    background: #4ade80;
+    box-shadow: 0 0 12px rgba(74, 222, 128, 0.5);
+}
+
+.indicator:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.2);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .phone-frame {
+        width: 280px;
+        height: 560px;
+    }
+
+    .app-content {
+        padding: 24px 20px 20px;
+    }
+
+    .content-header h2 {
+        font-size: 20px;
+    }
+
+    .rec-card {
+        padding: 16px;
+    }
+}
+
+/* 动画效果 */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.screen-content {
+    animation: slideIn 0.5s ease-out;
+}
+
+/* 优化滚动条样式 */
+.app-content::-webkit-scrollbar {
+    width: 2px;
+}
+
+.app-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.app-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 1px;
+}
+
+.app-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
