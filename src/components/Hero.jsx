@@ -6,7 +6,7 @@ import './Hero.css';
 
 const Hero = () => {
     return (
-        <section className="hero">
+        <section id="home" className="hero">
             {/* Background with glassmorphism effect */}
             <div className="hero-background">
                 <div className="gradient-orb orb-1"></div>
@@ -16,38 +16,37 @@ const Hero = () => {
 
             <div className="hero-container">
                 <div className="hero-content">
+                    {/* 左侧手机模型 */}
                     <motion.div
-                        className="hero-text"
-                        initial={{ opacity: 0, y: 50 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        className="hero-left"
+                        initial={{ opacity: 0, x: -100 }}
+                        animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, delay: 0.2 }}
                     >
-                        <h1>AI智能选择器</h1>
-                        <p className="hero-subtitle">
-                            利用人工智能技术，为您提供最智能的选择方案
-                        </p>
-                        <p className="hero-description">
-                            无论是购物决策、投资选择还是生活规划，AISelector都能为您提供个性化的智能建议，
-                            让每一个选择都变得更加明智和高效。
-                        </p>
-
-                        <motion.div
-                            className="hero-phone-inline"
-                            initial={{ opacity: 0, y: 30 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0.8 }}
-                        >
-                            <PhoneMockup />
-                        </motion.div>
+                        <PhoneMockup />
                     </motion.div>
 
+                    {/* 右侧文字和下载区域 */}
                     <motion.div
-                        className="hero-download-section"
+                        className="hero-right"
                         initial={{ opacity: 0, x: 100 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, delay: 0.4 }}
                     >
-                        <DownloadSection />
+                        <div className="hero-text">
+                            <h1>AI智能选择器</h1>
+                            <p className="hero-subtitle">
+                                利用人工智能技术，为您提供最智能的选择方案
+                            </p>
+                            <p className="hero-description">
+                                无论是购物决策、投资选择还是生活规划，AISelector都能为您提供个性化的智能建议，
+                                让每一个选择都变得更加明智和高效。
+                            </p>
+                        </div>
+
+                        <div className="hero-download">
+                            <DownloadSection />
+                        </div>
                     </motion.div>
                 </div>
             </div>

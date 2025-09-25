@@ -10,6 +10,14 @@ const Navbar = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const handleScrollTo = (sectionId) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+        setIsMenuOpen(false);
+    };
+
     return (
         <motion.nav
             className="navbar"
@@ -29,10 +37,10 @@ const Navbar = () => {
 
                 {/* Desktop Menu */}
                 <div className="navbar-menu desktop-menu">
-                    <a href="#home" className="navbar-link">首页</a>
-                    <a href="#features" className="navbar-link">功能</a>
-                    <a href="#about" className="navbar-link">关于</a>
-                    <a href="#contact" className="navbar-link">联系</a>
+                    <button onClick={() => handleScrollTo('home')} className="navbar-link">首页</button>
+                    <button onClick={() => handleScrollTo('features')} className="navbar-link">功能</button>
+                    <button onClick={() => handleScrollTo('about')} className="navbar-link">关于</button>
+                    <button onClick={() => handleScrollTo('contact')} className="navbar-link">联系</button>
                 </div>
 
                 {/* Download Button */}
@@ -57,10 +65,10 @@ const Navbar = () => {
                     animate={isMenuOpen ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
                     transition={{ duration: 0.3 }}
                 >
-                    <a href="#home" className="mobile-link" onClick={toggleMenu}>首页</a>
-                    <a href="#features" className="mobile-link" onClick={toggleMenu}>功能</a>
-                    <a href="#about" className="mobile-link" onClick={toggleMenu}>关于</a>
-                    <a href="#contact" className="mobile-link" onClick={toggleMenu}>联系</a>
+                    <button onClick={() => handleScrollTo('home')} className="mobile-link">首页</button>
+                    <button onClick={() => handleScrollTo('features')} className="mobile-link">功能</button>
+                    <button onClick={() => handleScrollTo('about')} className="mobile-link">关于</button>
+                    <button onClick={() => handleScrollTo('contact')} className="mobile-link">联系</button>
                     <motion.button
                         className="download-btn mobile-download"
                         whileHover={{ scale: 1.05 }}
