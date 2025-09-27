@@ -213,16 +213,16 @@ const Features = () => {
                             whileHover={{ scale: 1.05 }}
                             transition={{ duration: 0.2 }}
                         >
-                            <div className="stat-number">50K+</div>
-                            <div className="stat-label">活跃Agent</div>
+                            <div className="stat-number">100+</div>
+                            <div className="stat-label">专业Agent类型</div>
                         </motion.div>
                         <motion.div
                             className="stat-item"
                             whileHover={{ scale: 1.05 }}
                             transition={{ duration: 0.2 }}
                         >
-                            <div className="stat-number">98%</div>
-                            <div className="stat-label">评价可信度</div>
+                            <div className="stat-number">24/7</div>
+                            <div className="stat-label">智能服务</div>
                         </motion.div>
                         <motion.div
                             className="stat-item"
@@ -237,8 +237,8 @@ const Features = () => {
                             whileHover={{ scale: 1.05 }}
                             transition={{ duration: 0.2 }}
                         >
-                            <div className="stat-number">4.9★</div>
-                            <div className="stat-label">用户满意度</div>
+                            <div className="stat-number">10秒</div>
+                            <div className="stat-label">平均响应时间</div>
                         </motion.div>
                     </div>
                 </motion.div>

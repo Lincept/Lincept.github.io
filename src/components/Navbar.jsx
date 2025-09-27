@@ -37,23 +37,25 @@ const Navbar = () => {
                     <h2>KeXin</h2>
                 </motion.div>
 
-                {/* Desktop Menu */}
-                <div className="navbar-menu desktop-menu">
-                    <button onClick={() => handleScrollTo('home')} className="navbar-link">首页</button>
-                    <button onClick={() => handleScrollTo('features')} className="navbar-link">功能</button>
-                    <button onClick={() => handleScrollTo('about')} className="navbar-link">关于</button>
-                </div>
+                {/* Right side content: Menu + Button */}
+                <div className="navbar-right">
+                    <div className="navbar-menu desktop-menu">
+                        <button onClick={() => handleScrollTo('home')} className="navbar-link">首页</button>
+                        <button onClick={() => handleScrollTo('features')} className="navbar-link">功能</button>
+                        <button onClick={() => handleScrollTo('about')} className="navbar-link">关于</button>
+                    </div>
 
-                {/* Apply Button */}
-                <motion.button
-                    className="download-btn desktop-download"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    onClick={() => handleScrollTo('contact')}
-                >
-                    <Download size={20} />
-                    提前体验
-                </motion.button>
+                    {/* Apply Button */}
+                    <motion.button
+                        className="download-btn desktop-download"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        onClick={() => handleScrollTo('contact')}
+                    >
+                        <Download size={20} />
+                        提前体验
+                    </motion.button>
+                </div>
 
                 {/* Mobile Menu Button */}
                 <button className="mobile-menu-btn" onClick={toggleMenu}>

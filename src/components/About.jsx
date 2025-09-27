@@ -11,8 +11,8 @@ import './About.css';
 
 const About = () => {
     const stats = [
-        { number: "2021", label: "成立年份", icon: Calendar },
-        { number: "50+", label: "团队成员", icon: Users },
+        { number: "2025", label: "成立年份", icon: Calendar },
+        { number: "5", label: "团队成员", icon: Users },
         { number: "10+", label: "核心技术", icon: Target },
         { number: "AI", label: "驱动创新", icon: TrendingUp }
     ];
@@ -22,13 +22,13 @@ const About = () => {
             name: "张伟",
             role: "CEO & 创始人",
             avatar: "👨‍💼",
-            bio: "10年AI领域经验，前阿里巴巴算法专家"
+            bio: "10年AI领域经验"
         },
         {
             name: "李晓",
             role: "CTO",
             avatar: "👩‍💻",
-            bio: "机器学习博士，发表论文20+篇"
+            bio: "机器学习博士"
         },
         {
             name: "王强",
@@ -40,30 +40,15 @@ const About = () => {
             name: "刘芳",
             role: "数据科学家",
             avatar: "👩‍🔬",
-            bio: "大数据分析专家，清华大学统计学硕士"
+            bio: "大数据分析专家"
         }
     ];
 
     const milestones = [
         {
-            year: "2021",
+            year: "2025",
             title: "核心算法研发",
             description: "开发AI决策算法基础框架，实现多维度数据分析"
-        },
-        {
-            year: "2022",
-            title: "智能推荐系统",
-            description: "推出个性化推荐引擎，支持复杂决策场景"
-        },
-        {
-            year: "2023",
-            title: "多平台适配",
-            description: "扩展支持Web、移动端，实现跨平台无缝体验"
-        },
-        {
-            year: "2024",
-            title: "高级AI特性",
-            description: "集成最新AI技术，提供更精准的智能决策支持"
         }
     ];
 
@@ -89,12 +74,11 @@ const About = () => {
                                 让AI为您的每一个选择保驾护航
                             </p>
                             <p className="intro-description">
-                                可信是一家专注于人工智能决策辅助的创新公司。我们致力于通过先进的机器学习算法和大数据分析技术，
+                                可信是一个为用户做购物决策的助手。我们致力于通过先进的机器学习算法和大数据分析技术，
                                 为用户提供智能化、个性化的选择建议，让每一个决策都变得更加科学和高效。
                             </p>
                             <p className="intro-description">
-                                自成立以来，我们始终坚持"让选择更智能"的使命，不断创新技术，优化产品体验，
-                                已为全球超过10万用户提供了超过100万次的智能决策服务。
+                                自成立以来，我们始终坚持"让选择更智能"的使命，不断创新技术。
                             </p>
                         </div>
 
