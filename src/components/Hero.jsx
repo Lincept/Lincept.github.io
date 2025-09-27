@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import PhoneMockup from './PhoneMockup';
 import './Hero.css';
+
+import image1 from '../assets/main_page.png';
+import image2 from '../assets/my_devices.png';
 
 const Hero = () => {
     return (
@@ -22,7 +24,32 @@ const Hero = () => {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, delay: 0.2 }}
                     >
-                        <PhoneMockup />
+                        <motion.div
+                            className="phone-display"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{
+                                duration: 0.6,
+                                ease: "easeOut"
+                            }}
+                        >
+                            <div className="phones-container">
+                                <div className="phone-item">
+                                    <img
+                                        src={image1}
+                                        alt="手机展示图片 1"
+                                        className="phone-image"
+                                    />
+                                </div>
+                                <div className="phone-item">
+                                    <img
+                                        src={image2}
+                                        alt="手机展示图片 2"
+                                        className="phone-image"
+                                    />
+                                </div>
+                            </div>
+                        </motion.div>
                     </motion.div>
 
                     {/* 右侧文字和下载区域 */}
