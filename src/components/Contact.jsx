@@ -50,8 +50,8 @@ const Contact = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h2>报名体验</h2>
-                    <p>想要体验AISelector的智能决策功能？请填写以下信息，我们会尽快与您联系安排体验</p>
+                    <h2>提前体验</h2>
+                    <p>想要体验可信的智能决策功能？请填写以下信息，我们会尽快与您联系安排体验</p>
                 </motion.div>
 
                 <div className="contact-content">

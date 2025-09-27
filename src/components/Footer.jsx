@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="footer-container">
                 <div className="footer-content">
                     <div className="footer-brand">
-                        <h3>AISelector</h3>
+                        <h3>KeXin</h3>
                         <p>让AI为您的每一个选择保驾护航</p>
                     </div>
 
@@ -42,7 +42,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-bottom">
-                    <p>&copy; 2024 AISelector. All rights reserved.</p>
+                    <p>&copy; 2024 KeXin. All rights reserved.</p>
                     <p>打造更智能的决策体验</p>
                 </div>
             </div>

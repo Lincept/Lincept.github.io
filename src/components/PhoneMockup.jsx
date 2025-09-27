@@ -2,15 +2,20 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import './PhoneMockup.css';
 
+import image1 from '../assets/1.png';
+import image2 from '../assets/2.png';
+import image3 from '../assets/3.png';
+import image4 from '../assets/4.png';
+
 const PhoneMockup = () => {
     const [currentImage, setCurrentImage] = useState(0);
 
-    // 图片数组，使用assets文件夹中的图片
+    // 图片数组，使用导入的图片
     const images = [
-        '/assets/1.png',
-        '/assets/2.png',
-        '/assets/3.png',
-        '/assets/4.png'
+        image1,
+        image2,
+        image3,
+        image4
     ];
 
     React.useEffect(() => {

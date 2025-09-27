@@ -1,6 +1,6 @@
-# AISelector
+# KeXin (可信)
 
-AISelector 是一个基于 React + Vite 的静态网站 / 演示站点仓库。项目示例托管于 GitHub Pages： [https://Lincept.github.io](https://Lincept.github.io)。
+KeXin (可信) 是一个基于 React + Vite 的静态网站 / 演示站点仓库。项目示例托管于 GitHub Pages： [https://Lincept.github.io](https://Lincept.github.io)。
 
 本仓库为一个小型前端展示站点，使用 Vite 作为构建工具、React 作为 UI 框架，包含部分常用依赖（详见 `package.json`），例如 `framer-motion` 与 `lucide-react`。
 

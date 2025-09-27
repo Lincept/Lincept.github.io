@@ -33,12 +33,12 @@ const Hero = () => {
                         transition={{ duration: 1, delay: 0.4 }}
                     >
                         <div className="hero-text">
-                            <h1>AI智能选择器</h1>
+                            <h1>可信</h1>
                             <p className="hero-subtitle">
-                                利用人工智能技术，为您提供最智能的选择方案
+                                你的可信赖的AI决策助手
                             </p>
                             <p className="hero-description">
-                                无论是购物决策、投资选择还是生活规划，AISelector都能为您提供个性化的智能建议，
+                                无论是购物决策、投资选择还是生活规划，可信都能为您提供个性化的智能建议，
                                 让每一个选择都变得更加明智和高效。
                             </p>
                         </div>

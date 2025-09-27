@@ -84,12 +84,12 @@ const About = () => {
                 >
                     <div className="intro-content">
                         <div className="intro-text">
-                            <h2>关于AISelector</h2>
+                            <h2>关于可信</h2>
                             <p className="intro-subtitle">
                                 让AI为您的每一个选择保驾护航
                             </p>
                             <p className="intro-description">
-                                AISelector是一家专注于人工智能决策辅助的创新公司。我们致力于通过先进的机器学习算法和大数据分析技术，
+                                可信是一家专注于人工智能决策辅助的创新公司。我们致力于通过先进的机器学习算法和大数据分析技术，
                                 为用户提供智能化、个性化的选择建议，让每一个决策都变得更加科学和高效。
                             </p>
                             <p className="intro-description">
