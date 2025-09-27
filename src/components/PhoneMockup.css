@@ -1,365 +1,82 @@
-/* PhoneMockup.css - 简洁手机边框，重点突出内容 */
+/* PhoneMockup.css - 双手机展示样式 */
 
-.phone-mockup {
+.phone-display {
     position: relative;
-    margin: 2rem auto;
+    margin: 0;
+    max-width: none;
+    width: 100%;
+    height: 80vh;
     transition: all 0.3s ease;
 }
 
-.phone-mockup:hover {
-    transform: translateY(-8px);
-}
-
-/* 简洁的手机边框 */
-.phone-frame {
-    width: 320px;
-    height: 640px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 2px solid rgba(255, 255, 255, 0.15);
-    border-radius: 32px;
-    padding: 6px;
+.phones-container {
     position: relative;
-    box-shadow:
-        0 8px 32px rgba(0, 0, 0, 0.12),
-        0 0 0 1px rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    background: transparent;
 }
 
-.phone-frame:hover {
-    border-color: rgba(255, 255, 255, 0.25);
-    box-shadow:
-        0 12px 48px rgba(0, 0, 0, 0.18),
-        0 0 0 1px rgba(255, 255, 255, 0.15);
+.phone-item {
+    flex: 0 0 auto;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* 屏幕区域 - 重点突出内容 */
-.phone-screen {
+.phone-image {
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #0f172a 0%, #1e40af 50%, #3b82f6 100%);
-    border-radius: 26px;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    flex-direction: column;
+    object-fit: contain;
+    object-position: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
-/* 应用内容区域 */
-.app-content {
-    flex: 1;
-    padding: 32px 24px 24px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    overflow-y: auto;
-}
-
-/* 内容标题区域 */
-.content-header {
-    margin-bottom: 28px;
-    text-align: center;
-}
-
-.content-header h2 {
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: 700;
-    margin: 0 0 8px 0;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-.content-header p {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 14px;
-    margin: 0;
-    line-height: 1.4;
-}
-
-/* 屏幕内容样式 */
-.screen-content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-/* 推荐卡片样式 */
-.recommendation-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    flex: 1;
-}
-
-.rec-card {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 16px;
-    padding: 20px;
-    backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
-}
-
-.rec-card:hover {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: rgba(255, 255, 255, 0.25);
-    transform: translateY(-2px);
-}
-
-.rec-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 12px;
-}
-
-.rec-label {
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.rec-score {
-    font-size: 16px;
-    font-weight: 700;
-    color: #4ade80;
-}
-
-.rec-card.best .rec-label {
-    color: #4ade80;
-}
-
-.rec-card.good .rec-label {
-    color: #60a5fa;
-}
-
-.rec-card.fair .rec-label {
-    color: #fbbf24;
-}
-
-.rec-card h3 {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0 0 8px 0;
-}
-
-.rec-card p {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 14px;
-    margin: 0;
-    line-height: 1.4;
-}
-
-/* 数据分析样式 */
-.analytics-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.chart-container {
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 16px;
-    padding: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.chart-bars {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    height: 120px;
-    gap: 12px;
-}
-
-.chart-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-    gap: 8px;
-}
-
-.bar {
-    width: 100%;
-    background: linear-gradient(180deg, #4ade80 0%, #22c55e 100%);
-    border-radius: 4px 4px 0 0;
-    min-height: 20px;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(74, 222, 128, 0.3);
-}
-
-.chart-item span {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 12px;
-    font-weight: 500;
-    text-align: center;
-}
-
-.insights {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.insight-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 14px;
-}
-
-.insight-icon {
-    font-size: 16px;
-}
-
-/* 历史记录样式 */
-.history-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.stats-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-}
-
-.stat-card {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 16px;
-    padding: 20px;
-    text-align: center;
-    backdrop-filter: blur(10px);
-}
-
-.stat-number {
-    color: #4ade80;
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 4px;
-}
-
-.stat-label {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 12px;
-    font-weight: 500;
-}
-
-.recent-choices {
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 16px;
-    padding: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.recent-choices h4 {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 600;
-    margin: 0 0 16px 0;
-}
-
-.choice-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.choice-item:last-child {
-    border-bottom: none;
-}
-
-.choice-icon {
-    font-size: 18px;
-    width: 24px;
-    text-align: center;
-}
-
-.choice-details {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-}
-
-.choice-name {
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.choice-time {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 12px;
-}
-
-.choice-result.success {
-    color: #4ade80;
-    font-size: 16px;
-}
-
-/* 屏幕指示器 */
-.screen-indicators {
-    position: absolute;
-    bottom: 16px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 8px;
-    z-index: 10;
-}
-
-.indicator {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.3);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.indicator.active {
-    background: #4ade80;
-    box-shadow: 0 0 12px rgba(74, 222, 128, 0.5);
-}
-
-.indicator:hover {
-    background: rgba(255, 255, 255, 0.5);
-    transform: scale(1.2);
-}
 
 /* 响应式设计 */
 @media (max-width: 768px) {
-    .phone-frame {
-        width: 280px;
-        height: 560px;
+    .phone-display {
+        height: 60vh;
     }
 
-    .app-content {
-        padding: 24px 20px 20px;
+    .phones-container {
+        height: 60vh;
+        gap: 0;
+        flex-direction: column;
     }
 
-    .content-header h2 {
-        font-size: 20px;
-    }
-
-    .rec-card {
-        padding: 16px;
+    .phone-item {
+        width: 300px;
+        height: 450px;
     }
 }
 
-/* 动画效果 */
-@keyframes slideIn {
+@media (max-width: 480px) {
+    .phone-display {
+        height: 50vh;
+    }
+
+    .phones-container {
+        height: 50vh;
+        gap: 0;
+    }
+
+    .phone-item {
+        width: 250px;
+        height: 375px;
+    }
+}
+
+/* 动画效果增强 */
+@keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -371,51 +88,27 @@
     }
 }
 
-.screen-content {
-    animation: slideIn 0.5s ease-out;
+.phone-display {
+    animation: fadeInUp 0.6s ease-out;
 }
 
-/* 优化滚动条样式 */
-.app-content::-webkit-scrollbar {
-    width: 2px;
+/* 加载状态 */
+.phone-image[src=""] {
+    background: linear-gradient(45deg,
+            rgba(255, 255, 255, 0.1) 25%,
+            transparent 25%,
+            transparent 75%,
+            rgba(255, 255, 255, 0.1) 75%);
+    background-size: 20px 20px;
+    animation: loading 1s linear infinite;
 }
 
-.app-content::-webkit-scrollbar-track {
-    background: transparent;
-}
+@keyframes loading {
+    0% {
+        background-position: 0 0;
+    }
 
-.app-content::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 1px;
-}
-
-.app-content::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.5);
-}
-
-/* 图片轮播样式 */
-.image-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.carousel-image {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    transition: all 0.5s ease;
-}
-
-.carousel-image:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4);
+    100% {
+        background-position: 20px 20px;
+    }
 }

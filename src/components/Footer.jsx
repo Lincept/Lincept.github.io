@@ -42,7 +42,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-bottom">
-                    <p>&copy; 2024 KeXin. All rights reserved.</p>
+                    <p>&copy; 2025 KeXin. All rights reserved.</p>
                     <p>打造更智能的决策体验</p>
                 </div>
             </div>
