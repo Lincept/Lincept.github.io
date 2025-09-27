@@ -43,14 +43,15 @@ const Navbar = () => {
                     <button onClick={() => handleScrollTo('contact')} className="navbar-link">联系</button>
                 </div>
 
-                {/* Download Button */}
+                {/* Apply Button */}
                 <motion.button
                     className="download-btn desktop-download"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
+                    onClick={() => handleScrollTo('contact')}
                 >
                     <Download size={20} />
-                    下载应用
+                    报名体验
                 </motion.button>
 
                 {/* Mobile Menu Button */}
@@ -73,9 +74,10 @@ const Navbar = () => {
                         className="download-btn mobile-download"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
+                        onClick={() => handleScrollTo('contact')}
                     >
                         <Download size={20} />
-                        下载应用
+                        报名体验
                     </motion.button>
                 </motion.div>
             </div>

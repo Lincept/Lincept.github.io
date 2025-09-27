@@ -24,7 +24,7 @@ const Features = () => {
             icon: Target,
             title: "精准推荐",
             description: "基于大数据和用户行为，提供高精度的选择建议",
-            details: ["95%+ 匹配精度", "实时数据更新", "千万级样本训练"]
+            details: ["多维度数据分析", "个性化权重计算", "智能推理引擎"]
         },
         {
             icon: BarChart3,
@@ -42,7 +42,7 @@ const Features = () => {
             icon: Zap,
             title: "快速响应",
             description: "毫秒级响应速度，即时获得智能建议",
-            details: ["< 100ms 响应", "云端加速处理", "离线模式支持"]
+            details: ["高效算法处理", "云端加速支持", "离线模式可用"]
         },
         {
             icon: Shield,
@@ -60,7 +60,7 @@ const Features = () => {
             icon: Award,
             title: "专业认证",
             description: "获得多项技术认证和用户满意度奖项",
-            details: ["ISO认证", "用户满意度4.8分", "行业领先技术"]
+            details: ["技术领先认证", "用户体验优化", "行业标准遵循"]
         }
     ];
 

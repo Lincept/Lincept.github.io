@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import PhoneMockup from './PhoneMockup';
-import DownloadSection from './DownloadSection';
 import './Hero.css';
 
 const Hero = () => {
@@ -42,10 +41,6 @@ const Hero = () => {
                                 无论是购物决策、投资选择还是生活规划，AISelector都能为您提供个性化的智能建议，
                                 让每一个选择都变得更加明智和高效。
                             </p>
-                        </div>
-
-                        <div className="hero-download">
-                            <DownloadSection />
                         </div>
                     </motion.div>
                 </div>

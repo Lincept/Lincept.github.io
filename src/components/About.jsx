@@ -4,7 +4,6 @@ import {
     Users,
     Target,
     Award,
-    Globe,
     Calendar,
     TrendingUp
 } from 'lucide-react';
@@ -13,9 +12,9 @@ import './About.css';
 const About = () => {
     const stats = [
         { number: "2021", label: "成立年份", icon: Calendar },
-        { number: "100K+", label: "用户数量", icon: Users },
         { number: "50+", label: "团队成员", icon: Users },
-        { number: "15+", label: "国家覆盖", icon: Globe }
+        { number: "10+", label: "核心技术", icon: Target },
+        { number: "AI", label: "驱动创新", icon: TrendingUp }
     ];
 
     const teamMembers = [
@@ -48,23 +47,23 @@ const About = () => {
     const milestones = [
         {
             year: "2021",
-            title: "公司成立",
-            description: "AISelector项目启动，核心团队组建"
+            title: "核心算法研发",
+            description: "开发AI决策算法基础框架，实现多维度数据分析"
         },
         {
             year: "2022",
-            title: "产品发布",
-            description: "首版产品上线，获得首批10K用户"
+            title: "智能推荐系统",
+            description: "推出个性化推荐引擎，支持复杂决策场景"
         },
         {
             year: "2023",
-            title: "快速增长",
-            description: "用户突破50K，获得A轮融资"
+            title: "多平台适配",
+            description: "扩展支持Web、移动端，实现跨平台无缝体验"
         },
         {
             year: "2024",
-            title: "全球扩张",
-            description: "进入国际市场，用户超过100K"
+            title: "高级AI特性",
+            description: "集成最新AI技术，提供更精准的智能决策支持"
         }
     ];
 
