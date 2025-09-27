@@ -53,7 +53,7 @@ const Navbar = () => {
                         onClick={() => handleScrollTo('contact')}
                     >
                         <Download size={20} />
-                        提前体验
+                        申请内测
                     </motion.button>
                 </div>
 
@@ -79,7 +79,7 @@ const Navbar = () => {
                         onClick={() => handleScrollTo('contact')}
                     >
                         <Download size={20} />
-                        提前体验
+                        申请内测
                     </motion.button>
                 </motion.div>
             </div>

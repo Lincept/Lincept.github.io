@@ -34,19 +34,21 @@ const Hero = () => {
                             }}
                         >
                             <div className="phones-container">
-                                <div className="phone-item">
-                                    <img
-                                        src={image1}
-                                        alt="手机展示图片 1"
-                                        className="phone-image"
-                                    />
-                                </div>
-                                <div className="phone-item">
-                                    <img
-                                        src={image2}
-                                        alt="手机展示图片 2"
-                                        className="phone-image"
-                                    />
+                                <div className="phone-card">
+                                    <div className="phone-item">
+                                        <img
+                                            src={image1}
+                                            alt="手机展示图片 1"
+                                            className="phone-image"
+                                        />
+                                    </div>
+                                    <div className="phone-item">
+                                        <img
+                                            src={image2}
+                                            alt="手机展示图片 2"
+                                            className="phone-image"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </motion.div>

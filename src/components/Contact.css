@@ -184,12 +184,42 @@
     transition: all 0.3s ease;
 }
 
-.contact-form h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #1a1a2e;
-    margin-bottom: 2rem;
+/* 统一的内容区域 */
+.form-content {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* 成功状态内容 */
+.success-content {
     text-align: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.success-icon {
+    color: #10b981;
+    margin-bottom: 1.5rem;
+}
+
+.success-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #374151;
+    margin-bottom: 1rem;
+    letter-spacing: 0.02em;
+}
+
+.success-text {
+    color: #6b7280;
+    font-size: 1.05rem;
+    margin: 0;
+    line-height: 1.5;
 }
 
 .form-group {
@@ -205,12 +235,12 @@
     letter-spacing: 0.02em;
 }
 
-.form-container:hover {
+/* .form-container:hover {
     transform: translateY(-4px);
     box-shadow:
         0 25px 70px rgba(102, 126, 234, 0.2),
         0 0 0 1px rgba(255, 255, 255, 0.9);
-}
+} */
 
 .form-group input,
 .form-group select,
@@ -220,10 +250,12 @@
     border: 2px solid rgba(102, 126, 234, 0.15);
     border-radius: 12px;
     font-size: 1rem;
+    color: #374151;
     background: rgba(255, 255, 255, 0.9);
     transition: all 0.3s ease;
     font-family: inherit;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
 }
 
 .form-group input:focus,
@@ -231,7 +263,8 @@
 .form-group textarea:focus {
     outline: none;
     border-color: #667eea;
-    background: rgba(255, 255, 255, 1);
+    color: #ffffff;
+    background: rgba(31, 41, 55, 0.95);
     box-shadow:
         0 0 0 3px rgba(102, 126, 234, 0.12),
         0 4px 12px rgba(0, 0, 0, 0.08);
@@ -242,6 +275,20 @@
     resize: vertical;
     min-height: 120px;
     line-height: 1.5;
+}
+
+.form-group input::placeholder,
+.form-group select::placeholder,
+.form-group textarea::placeholder {
+    color: #9ca3af;
+    opacity: 1;
+}
+
+.form-group input:focus::placeholder,
+.form-group select:focus::placeholder,
+.form-group textarea:focus::placeholder {
+    color: #d1d5db;
+    opacity: 0.8;
 }
 
 .submit-btn {
@@ -264,6 +311,7 @@
         0 0 0 1px rgba(255, 255, 255, 0.1);
     letter-spacing: 0.02em;
     margin-top: 0.5rem;
+    box-sizing: border-box;
 }
 
 .submit-btn:hover {
@@ -274,27 +322,7 @@
     background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
 }
 
-/* 成功消息 */
-.success-message {
-    text-align: center;
-    padding: 3.5rem 2rem;
-    color: #10b981;
-}
-
-.success-message h3 {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: #374151;
-    margin: 1.2rem 0 0.8rem;
-    letter-spacing: 0.02em;
-}
-
-.success-message p {
-    color: #6b7280;
-    font-size: 1.05rem;
-    margin: 0;
-    line-height: 1.5;
-}
+/* 移除旧的成功消息样式，现在使用统一的 form-content 结构 */
 
 /* FAQ 部分 */
 .faq-section h3 {
